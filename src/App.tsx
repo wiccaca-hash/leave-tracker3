@@ -509,7 +509,7 @@ export default function App() {
 
         <div style={{ display: "flex", gap: 12, marginBottom: 24 }}>
           <button style={S.btnLeave} onClick={() => { setLeaveForm({ date: today(), hours: "", note: "" }); setModal("leave"); }}>
-            <span style={{ fontSize: 24 }}>✈️</span>
+            <span style={{ fontSize: 24 }}>😇</span>
             <span style={{ fontWeight: 700 }}>申請請假</span>
           </button>
           <button style={S.btnSec} onClick={() => setView("history")}>
@@ -536,7 +536,7 @@ export default function App() {
       {modal === "leave" && (
         <div style={S.overlay} onClick={(e) => { if (e.target === e.currentTarget) setModal(null); }}>
           <div style={S.drawer}>
-            <h3 style={S.dTitle}>✈️ 申請請假</h3>
+            <h3 style={S.dTitle}>😇 申請請假</h3>
 
             <div style={S.fg}>
               <label style={S.lbl}>請假日期</label>
